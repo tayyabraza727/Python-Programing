@@ -1,0 +1,27 @@
+def sum(a, b):
+    return (a + b)
+def multiply(a, b):
+    return (a * b)
+def divide(a, b):
+    if b == 0:
+        print("No not divide by 0")
+    else:
+        return (a / b)
+def minus(a, b):
+    return (a - b)
+
+a = float(input('Enter 1st number: '))
+sign = input("enter calculation sign: ")
+b = float(input('Enter 2nd number: '))
+if sign == "+":
+    result = sum(a,b)
+elif sign == "*":
+    result = multiply(a,b)
+elif sign == "/":
+    result = divide(a,b)
+elif sign == "-":
+    result = minus(a,b)
+else:
+    result = "Not define"
+
+print("result = ", result)
